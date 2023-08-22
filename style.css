@@ -1,0 +1,114 @@
+* {
+  color: rgb(9, 121, 65);
+}
+
+a {
+  text-decoration: none;
+  color: lightgreen;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+small {
+  font-size: 0.5rem;
+}
+
+.custom-button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem 0;
+}
+
+.custom-button:hover {
+  background-color: rgb(255, 98, 0);
+}
+
+header {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0.25rem 1.5rem;
+  background-color: darkred;
+  align-items: center;
+  max-width: 1920px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  color: aliceblue;
+}
+header nav a {
+  margin: auto 0.5rem;
+}
+
+main {
+  max-width: 1920px;
+  margin: auto;
+  background-color: beige;
+  padding: 0.25rem 1.5rem;
+}
+main .main-text {
+  text-align: center;
+}
+main .main-container {
+  display: flex;
+  padding: 0.25rem 0;
+  margin: 1rem;
+  box-shadow: 10px 10px 20px red;
+}
+main .main-container .image-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: 1rem;
+}
+main .main-container .image-container img {
+  box-shadow: 5px 5px 20px grey;
+  width: 100%;
+  min-width: 100px;
+  height: auto;
+  border-radius: 1rem 0rem;
+}
+main .main-container .text-container {
+  width: 60%;
+  margin: 1rem;
+}
+main .main-container .text-container p {
+  color: white;
+}
+main .main-container .text-container p span {
+  font-style: oblique;
+  color: red;
+  text-shadow: 1px 1px white;
+}
+main .hero {
+  background: linear-gradient(351deg, rgb(9, 121, 65) 44%, rgb(0, 212, 255) 45%);
+}
+main .about {
+  background: linear-gradient(170deg, rgb(9, 121, 65) 44%, rgb(0, 212, 255) 45%);
+}
+main .about h2,
+main .about p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */
