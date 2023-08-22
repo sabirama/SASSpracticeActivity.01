@@ -32,8 +32,9 @@ small {
   border: none;
   background-color: red;
   color: white;
-  padding: 0.5rem;
+  padding: 2rem;
   border-radius: 1rem 0;
+  font-size: 2vw;
 }
 .custom-button:hover {
   background-color: rgb(255, 98, 0);
@@ -176,6 +177,17 @@ main .foods-selection button {
   border-radius: 1rem 0;
   border: inset 2px darkred;
   font-size: 2rem;
+}
+main .price-container {
+  width: 80vw;
+  text-align: right;
+  margin: auto;
+}
+main .price-container .price span {
+  display: inline-block;
+  width: 10%;
+  height: 2rem;
+  background-color: white;
 }
 
 footer {
