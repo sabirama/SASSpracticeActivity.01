@@ -31,6 +31,10 @@ small {
   }
 }
 
+.bg-container {
+  background-color: white;
+}
+
 .custom-button {
   border: none;
   background-color: red;
@@ -46,13 +50,14 @@ small {
 header {
   display: flex;
   margin: auto;
+  padding: 1rem 2rem;
   justify-content: space-between;
-  padding: 0.25rem 1.5rem;
   background-color: darkred;
   align-items: center;
-  max-width: 1720px;
   position: sticky;
   top: 0;
+  z-index: 10;
+
   .logo {
     display: flex;
     align-items: center;
@@ -68,11 +73,9 @@ header {
 }
 
 main {
-  max-width: 1720px;
-  width: 100%;
   margin: auto;
   background-color: beige;
-  padding: 0.25rem 1.5rem;
+  padding: 1rem 2rem;
   .main-text {
     text-align: center;
   }
@@ -100,6 +103,16 @@ main {
     .text-container {
       width: 60%;
       margin: 1rem;
+
+      h2 {
+        span {
+          color: red;
+          text-shadow: 5px 5px white;
+          font: {
+            size: 5rem;
+          }
+        }
+      }
       p {
         color: white;
         span {
@@ -140,44 +153,71 @@ main {
     margin: 1rem auto 3rem;
     padding-bottom: 2rem;
     flex-direction: column;
-    .food-selector {
+    .food-selector-container {
       display: flex;
+      flex-wrap: wrap;
       margin: auto;
-      padding-bottom: 1rem;
-      min-width: 400px;
-      max-width: 1200px;
-      width: 100%;
-      overflow-x: auto;
+      padding: 2rem 0;
+      width: 80vw;
+      overflow: auto;
+      position: relative;
+      h2 {
+        position: sticky;
+        left: 0;
+      }
       .food-flow-container {
         display: flex;
         .foods-item {
           width: 180px;
           height: 240px;
           text-align: center;
-          align-items: center;
           padding: 0.5rem;
-          margin: 1rem;
+          margin: 0 1rem;
           box-shadow: 5px 5px grey, 10px 10px 20px rgb(255, 98, 0, 0.4);
+          z-index: 1;
 
           &:hover {
             background-color: grey;
             transition: 0.4s;
           }
+
+          .food-img-container {
+            background-color: blue;
+            padding: 0.25rem;
+            .food-img {
+              width: 96%;
+              height: auto;
+            }
+          }
+
+          .food-text {
+            background-color: green;
+
+            small {
+              color: white;
+            }
+          }
         }
       }
     }
+
     button {
       align-self: flex-end;
       padding: 2rem;
       margin: 1rem auto;
+      border-radius: 1rem 0;
+      border: inset 2px darkred;
+      font-size: 2rem;
     }
   }
 }
 
 footer {
-  max-width: 1720px;
+  margin: auto;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
+  background-color: darkred;
   .links-container {
     display: block;
     justify-content: space-between;
@@ -186,8 +226,13 @@ footer {
       flex-direction: column;
       padding: 1rem 1rem;
       border-left: 2px solid grey;
-
+      small {
+        color: lightgreen;
+      }
       ul {
+        small {
+          color: lightgreen;
+        }
         margin: 0;
         padding-inline-start: 10px;
         list-style: none;
@@ -200,20 +245,28 @@ footer {
         border: none;
         border-bottom: 2px solid grey;
         margin-bottom: 0.25rem;
+        color: lightgreen;
       }
 
       button {
         border: none;
-        background-color: rgba(0, 212, 255, 1);
+        background-color: rgba(9, 121, 65, 1);
         padding: 0.5rem;
         border-radius: 0.25rem 0;
+        color: white;
       }
     }
   }
 
   span {
-    font-size: 0.5rem;
+    font-size: 1rem;
     align-self: center;
+    color: lightgreen;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0 0 1rem 0;
+    box-sizing: border-box;
   }
 }
 
