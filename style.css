@@ -1,5 +1,6 @@
 * {
   color: rgb(9, 121, 65);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -42,6 +43,8 @@ header {
   background-color: darkred;
   align-items: center;
   max-width: 1920px;
+  position: sticky;
+  top: 0;
 }
 header .logo {
   display: flex;
@@ -55,6 +58,7 @@ header nav a {
 
 main {
   max-width: 1920px;
+  width: 100%;
   margin: auto;
   background-color: beige;
   padding: 0.25rem 1.5rem;
@@ -105,6 +109,40 @@ main .about p {
   padding: 0.25rem;
   border-radius: 0.25rem;
 }
+main .foods-selection {
+  margin: 1rem auto 3rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+}
+main .foods-selection .food-selector {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  min-width: 400px;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+main .foods-selection .food-selector .food-flow-container {
+  display: flex;
+}
+main .foods-selection .food-selector .food-flow-container .foods-item {
+  width: 180px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: 5px 5px grey, 10px 10px 20px rgba(255, 98, 0, 0.4);
+}
+main .foods-selection .food-selector .food-flow-container .foods-item:hover {
+  background-color: grey;
+  transition: 0.4s;
+}
+main .foods-selection button {
+  align-self: flex-end;
+  padding: 2rem;
+  margin: 1rem auto;
+}
 
 footer {
   display: flex;
@@ -143,6 +181,18 @@ footer span {
 }
 
 @media screen and (min-width: 584px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  small {
+    font-size: 1rem;
+  }
   footer .links-container {
     display: flex;
   }

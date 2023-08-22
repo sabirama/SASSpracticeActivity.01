@@ -1,5 +1,6 @@
 * {
   color: rgba(9, 121, 65, 1);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -50,6 +51,8 @@ header {
   background-color: darkred;
   align-items: center;
   max-width: 1920px;
+  position: sticky;
+  top: 0;
   .logo {
     display: flex;
     align-items: center;
@@ -66,6 +69,7 @@ header {
 
 main {
   max-width: 1920px;
+  width: 100%;
   margin: auto;
   background-color: beige;
   padding: 0.25rem 1.5rem;
@@ -126,6 +130,42 @@ main {
       border-radius: 0.25rem;
     }
   }
+
+  .foods-selection {
+    margin: 1rem auto 3rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    .food-selector {
+      display: flex;
+      margin: auto;
+      width: 90%;
+      min-width: 400px;
+      max-width: 1200px;
+      overflow-x: auto;
+      .food-flow-container {
+        display: flex;
+        .foods-item {
+          width: 180px;
+          height: 240px;
+          text-align: center;
+          align-items: center;
+          padding: 0.5rem;
+          margin: 1rem;
+          box-shadow: 5px 5px grey, 10px 10px 20px rgb(255, 98, 0, 0.4);
+
+          &:hover {
+            background-color: grey;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+    button {
+      align-self: flex-end;
+      padding: 2rem;
+      margin: 1rem auto;
+    }
+  }
 }
 
 footer {
@@ -171,6 +211,29 @@ footer {
 }
 
 @media screen and (min-width: 584px) {
+  h1 {
+    font: {
+      size: 4rem;
+    }
+  }
+
+  h2 {
+    font: {
+      size: 3rem;
+    }
+  }
+
+  p {
+    font: {
+      size: 2rem;
+    }
+  }
+  small {
+    font: {
+      size: 1rem;
+    }
+  }
+
   footer {
     .links-container {
       display: flex;
