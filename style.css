@@ -30,7 +30,6 @@ small {
   padding: 0.5rem;
   border-radius: 1rem 0;
 }
-
 .custom-button:hover {
   background-color: rgb(255, 98, 0);
 }
@@ -66,8 +65,8 @@ main .main-text {
 main .main-container {
   display: flex;
   padding: 0.25rem 0;
-  margin: 1rem;
-  box-shadow: 10px 10px 20px red;
+  margin: 1rem 1rem 3rem;
+  box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.4);
 }
 main .main-container .image-container {
   display: flex;
@@ -103,12 +102,48 @@ main .about {
 main .about h2,
 main .about p {
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
   padding: 0.25rem;
   border-radius: 0.25rem;
 }
 
-footer .footer-links {
+footer {
   display: flex;
   flex-direction: column;
+}
+footer .links-container {
+  display: block;
+  justify-content: space-between;
+}
+footer .links-container .footer-links {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  border-left: 2px solid grey;
+}
+footer .links-container .footer-links ul {
+  margin: 0;
+  padding-inline-start: 10px;
+  list-style: none;
+}
+footer .links-container .newsletter input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid grey;
+  margin-bottom: 0.25rem;
+}
+footer .links-container .newsletter button {
+  border: none;
+  background-color: rgb(0, 212, 255);
+  padding: 0.5rem;
+  border-radius: 0.25rem 0;
+}
+footer span {
+  font-size: 0.5rem;
+  align-self: center;
+}
+
+@media screen and (min-width: 584px) {
+  footer .links-container {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
