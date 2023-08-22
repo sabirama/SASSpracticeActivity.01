@@ -100,10 +100,13 @@ main .main-container .text-container p span {
   text-shadow: 1px 1px white;
 }
 main .hero {
-  background: linear-gradient(351deg, rgb(9, 121, 65) 44%, rgb(0, 212, 255) 45%);
+  background: linear-gradient(351deg, rgb(9, 121, 65) 44%, rgb(10, 92, 108) 45%);
+}
+main .hero h2 {
+  color: rgb(0, 212, 255);
 }
 main .about {
-  background: linear-gradient(170deg, rgb(9, 121, 65) 44%, rgb(0, 212, 255) 45%);
+  background: linear-gradient(170deg, rgb(9, 121, 65) 44%, rgb(10, 92, 108) 45%);
 }
 main .about h2,
 main .about p {
@@ -119,9 +122,9 @@ main .foods-selection {
 main .foods-selection .food-selector {
   display: flex;
   margin: auto;
-  width: 90%;
+  padding-bottom: 1rem;
   min-width: 400px;
-  max-width: 1200px;
+  max-width: 1000px;
   overflow-x: auto;
 }
 main .foods-selection .food-selector .food-flow-container {

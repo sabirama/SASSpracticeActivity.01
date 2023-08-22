@@ -115,14 +115,17 @@ main {
     background: linear-gradient(
       351deg,
       rgba(9, 121, 65, 1) 44%,
-      rgba(0, 212, 255, 1) 45%
+      rgba(10, 92, 108, 1) 45%
     );
+    h2 {
+      color: rgba(0, 212, 255, 1);
+    }
   }
   .about {
     background: linear-gradient(
       170deg,
       rgba(9, 121, 65, 1) 44%,
-      rgba(0, 212, 255, 1) 45%
+      rgba(10, 92, 108, 1) 45%
     );
 
     h2,
@@ -140,9 +143,9 @@ main {
     .food-selector {
       display: flex;
       margin: auto;
-      width: 90%;
+      padding-bottom: 1rem;
       min-width: 400px;
-      max-width: 1200px;
+      max-width: 1000px;
       overflow-x: auto;
       .food-flow-container {
         display: flex;
