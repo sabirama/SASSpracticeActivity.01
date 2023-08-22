@@ -42,7 +42,7 @@ header {
   padding: 0.25rem 1.5rem;
   background-color: darkred;
   align-items: center;
-  max-width: 1920px;
+  max-width: 1720px;
   position: sticky;
   top: 0;
 }
@@ -57,7 +57,7 @@ header nav a {
 }
 
 main {
-  max-width: 1920px;
+  max-width: 1720px;
   width: 100%;
   margin: auto;
   background-color: beige;
@@ -124,7 +124,8 @@ main .foods-selection .food-selector {
   margin: auto;
   padding-bottom: 1rem;
   min-width: 400px;
-  max-width: 1000px;
+  max-width: 1200px;
+  width: 100%;
   overflow-x: auto;
 }
 main .foods-selection .food-selector .food-flow-container {
@@ -150,6 +151,7 @@ main .foods-selection button {
 }
 
 footer {
+  max-width: 1720px;
   display: flex;
   flex-direction: column;
 }

@@ -50,7 +50,7 @@ header {
   padding: 0.25rem 1.5rem;
   background-color: darkred;
   align-items: center;
-  max-width: 1920px;
+  max-width: 1720px;
   position: sticky;
   top: 0;
   .logo {
@@ -68,7 +68,7 @@ header {
 }
 
 main {
-  max-width: 1920px;
+  max-width: 1720px;
   width: 100%;
   margin: auto;
   background-color: beige;
@@ -145,7 +145,8 @@ main {
       margin: auto;
       padding-bottom: 1rem;
       min-width: 400px;
-      max-width: 1000px;
+      max-width: 1200px;
+      width: 100%;
       overflow-x: auto;
       .food-flow-container {
         display: flex;
@@ -174,6 +175,7 @@ main {
 }
 
 footer {
+  max-width: 1720px;
   display: flex;
   flex-direction: column;
   .links-container {
