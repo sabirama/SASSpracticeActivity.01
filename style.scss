@@ -78,9 +78,11 @@ main {
   }
   .main-container {
     display: flex;
+    margin: auto;
     padding: 0.25rem 0;
     margin: 1rem 1rem 3rem;
     box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.4);
+    max-width: 98%;
     .image-container {
       display: flex;
       align-items: center;
